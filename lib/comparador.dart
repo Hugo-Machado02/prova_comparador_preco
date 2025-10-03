@@ -8,11 +8,11 @@ class comparadorPreco extends StatefulWidget {
 }
 
 class _comparadorPrecoState extends State<comparadorPreco> {
-  // TextEditingController precoOpcaoA = TextEditingController();
-  // TextEditingController qtdOpcaoA = TextEditingController();
-  // TextEditingController precoOpcaob = TextEditingController();
-  // TextEditingController qtdOpcaob = TextEditingController();
-  // String _resultado = "";
+  TextEditingController precoOpcaoA = TextEditingController();
+  TextEditingController qtdOpcaoA = TextEditingController();
+  TextEditingController precoOpcaob = TextEditingController();
+  TextEditingController qtdOpcaob = TextEditingController();
+  String _resultado = "";
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +23,33 @@ class _comparadorPrecoState extends State<comparadorPreco> {
         backgroundColor: Colors.greenAccent,
       ),
       body: Center(
-        padding: EdgeInsets.all(10),
-        child: Container(child: TextField(keyboardType: TextInputType.number)),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              child: Column(
+                children: [
+                  TextField(
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      contentPadding: const EdgeInsets.all(20),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              // TextField(
+              //   controller: precoOpcaoA,
+              //   keyboardType: TextInputType.number,
+              // ),
+            ),
+            Container(child: TextField(keyboardType: TextInputType.number)),
+          ],
+        ),
       ),
     );
   }
