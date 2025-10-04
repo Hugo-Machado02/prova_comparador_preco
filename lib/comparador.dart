@@ -40,7 +40,7 @@ class _comparadorPrecoState extends State<comparadorPreco> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         label: Text("Digite o Valor da Opção A"),
-                        suffix: Text("Ml"),
+                        suffix: Text("R\$"),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -54,7 +54,7 @@ class _comparadorPrecoState extends State<comparadorPreco> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         label: Text("Digite a Quantidade Opção A"),
-                        suffix: Text("R\$"),
+                        suffix: Text("ML"),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -75,7 +75,7 @@ class _comparadorPrecoState extends State<comparadorPreco> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         label: Text("Digite o Valor da Opção B"),
-                        suffix: Text("L"),
+                        suffix: Text("R\$"),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -89,7 +89,7 @@ class _comparadorPrecoState extends State<comparadorPreco> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         label: Text("Digite a Quantidade Opção B"),
-                        suffix: Text("R\$"),
+                        suffix: Text("L"),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
