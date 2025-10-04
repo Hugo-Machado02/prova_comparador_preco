@@ -118,7 +118,7 @@ class _comparadorPrecoState extends State<comparadorPreco> {
                         "Opção A: R\$ ${valorA.toStringAsFixed(2)} por ${qtdA.toStringAsFixed(2)}ML ==> ${_qtdALitros}L ==> ${calcOpcaoA}/L";
 
                     _textoOpcaoB =
-                        "Opção A: R\$ ${valorB.toStringAsFixed(2)} por ${qtdB.toStringAsFixed(2)} ==> $calcOpcaoB/L";
+                        "Opção B: R\$ ${valorB.toStringAsFixed(2)} por ${qtdB.toStringAsFixed(2)} ==> $calcOpcaoB/L";
 
                     if (calcOpcaoA == calcOpcaoB) {
                       _resultado =
